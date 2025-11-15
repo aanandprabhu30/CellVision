@@ -40,7 +40,7 @@ def analyze_microscopy_image(image_path):
 
     # 2. Cell segmentation with CellPose
     model = get_cellpose_model()
-    masks, _, _, diams = model.eval(img, diameter=30)
+    masks, flows, styles = model.eval(img, diameter=30)
 
     # 3. Extract quantitative metrics
     cell_count = len(np.unique(masks)) - 1
@@ -127,7 +127,7 @@ Format as: "Figure X: [Comprehensive scientific description]"
 Keep it concise but scientifically precise."""
 
     response = client.chat.completions.create(
-        model="gpt-4-vision-preview",
+        model="gpt-4o",
         messages=[{
             "role": "user",
             "content": [
