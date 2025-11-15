@@ -1,48 +1,12 @@
-# Python
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-
-# Environment variables
+*.pyc
 .env
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# CellPose models
-.cellpose/
-models/
-
-# Generated files
-*.png
-!sample_cells.png
-*.jpg
-*.jpeg
-*.tif
-*.tiff
+temp_*.png
 analysis.png
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-
-# Claude
-.claude/
+analysis_enhanced.png
+report_*.png

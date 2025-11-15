@@ -1,8 +1,27 @@
-cellpose
-numpy
-opencv-python
-streamlit
-openai
-pillow
-matplotlib
-scikit-image
+# Core Dependencies
+cellpose>=2.2.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+streamlit>=1.28.0
+openai>=1.3.0
+pillow>=10.0.0
+matplotlib>=3.7.0
+scikit-image>=0.21.0
+
+# Advanced Analysis
+scipy>=1.11.0
+pandas>=2.0.0
+
+# Interactive Visualizations
+plotly>=5.17.0
+
+# PDF Report Generation
+reportlab>=4.0.0
+fpdf2>=2.7.0
+
+# Image Processing
+scikit-learn>=1.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
