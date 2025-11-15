@@ -12,7 +12,11 @@ import os
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from analysis_enhanced import analyze_microscopy_image, generate_analysis_narrative
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from core.analysis_enhanced import analyze_microscopy_image, generate_analysis_narrative
 from skimage import io
 import json
 
@@ -61,9 +65,16 @@ st.markdown("""
 
 def load_demo_images():
     """Load available demo images"""
-    demo_dir = Path("demo_images")
-    if demo_dir.exists():
-        return list(demo_dir.glob("*.jpg")) + list(demo_dir.glob("*.png"))
+    # Try multiple possible paths
+    possible_paths = [
+        Path("data/demo_images"),
+        Path("demo_images"),
+        Path(__file__).parent.parent.parent / "data" / "demo_images"
+    ]
+    
+    for demo_dir in possible_paths:
+        if demo_dir.exists():
+            return list(demo_dir.glob("*.jpg")) + list(demo_dir.glob("*.png"))
     return []
 
 
