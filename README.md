@@ -20,7 +20,7 @@ pip install -r requirements.txt
 streamlit run cellvision.py
 ```
 
-**That's it!** Open http://localhost:8501 in your browser.
+**That's it!** Open <http://localhost:8501> in your browser.
 
 ---
 
@@ -41,6 +41,7 @@ streamlit run cellvision.py
 3. **Get** comprehensive results in 30 seconds
 
 **Results include:**
+
 - Total cell count
 - Average health score
 - Morphology classification (Healthy, Stressed, Apoptotic, etc.)
@@ -61,7 +62,7 @@ streamlit run cellvision.py
 
 For AI-generated figure legends, you need an OpenAI API key:
 
-1. Get key: https://platform.openai.com/api-keys
+1. Get key: <https://platform.openai.com/api-keys>
 2. Enter in app's "Advanced Settings"
 
 ---
@@ -88,6 +89,7 @@ CellVision/
 **Solution**: CellVision automates analysis with 95% accuracy using state-of-the-art AI.
 
 **Tech Stack**:
+
 - CellPose (Nature Methods 2021)
 - GPT-4o Vision (OpenAI 2024)
 - Streamlit (UI)
