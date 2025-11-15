@@ -24,6 +24,7 @@ wheels/
 venv/
 ENV/
 env/
+.venv/
 
 # IDE
 .vscode/
@@ -31,7 +32,6 @@ env/
 *.swp
 *.swo
 *~
-.DS_Store
 
 # Models
 *.pth
@@ -59,11 +59,10 @@ report_*.png
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints
 
 # Docker
 docker-compose.override.yml
 
 # OS
-Thumbs.db
 .DS_Store
+Thumbs.db
