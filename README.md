@@ -24,24 +24,28 @@ Cell biology researchers face a critical bottleneck:
 ## ✨ What Makes This Special
 
 ### 🤖 Advanced AI (95%+ Accuracy)
+
 - **Ensemble Model**: Combines multiple state-of-the-art models
 - **Cell Health Scoring**: 0-100 automated health assessment
 - **Morphology Classification**: Healthy, Stressed, Apoptotic, Elongated, Irregular
 - **Spatial Analysis**: Clustering patterns, cell distances
 
 ### 📊 Comprehensive Analysis (20+ Metrics)
+
 - Cell count, area, circularity, eccentricity, solidity
 - Population statistics (mean, median, std deviation)
 - Nearest neighbor distances
 - Size variation coefficients
 
 ### 🎨 Professional Interface
+
 - Interactive Plotly visualizations
 - Health heatmaps with color coding
 - Real-time progress tracking
 - Export to PDF, CSV, JSON
 
 ### 📄 Publication-Ready Outputs
+
 - AI-generated figure legends (GPT-4)
 - Comprehensive PDF reports
 - Detailed per-cell data export
@@ -70,13 +74,13 @@ cp config/.env.example .env
 python app.py
 ```
 
-**Open browser to http://localhost:8501**
+**Open browser to <http://localhost:8501>**
 
 ---
 
 ## 📁 Project Structure
 
-```
+```bash
 CellVision/
 ├── app.py                      # 🌟 Main entry point (run this!)
 ├── README.md                   # This file
@@ -140,12 +144,12 @@ CellVision/
 
 **What**: 1.6 million cells, 8 cancer cell types  
 **Download**: Automatic in Colab notebook  
-**Manual**: https://sartorius-research.github.io/LIVECell/
+**Manual**: <https://sartorius-research.github.io/LIVECell/>
 
 ### BBBC Datasets
 
 **What**: 50+ diverse microscopy datasets  
-**Site**: https://bbbc.broadinstitute.org/  
+**Site**: <https://bbbc.broadinstitute.org/>  
 **Recommended**: BBBC038 (nuclei), BBBC039 (cells)
 
 **📖 See [docs/MODEL_ENHANCEMENT_GUIDE.md](docs/MODEL_ENHANCEMENT_GUIDE.md) for more datasets**
@@ -176,6 +180,7 @@ docker-compose up -d
 | **Cell Types** | General | Cancer | All |
 
 **Validated on:**
+
 - LIVECell: 1.6M cells, 8 types
 - BBBC: 50+ datasets  
 - CellBinDB: Spatial omics
@@ -227,22 +232,26 @@ Show: Cell detection → Health scoring → Spatial analysis → AI legend
 ## 🔧 Troubleshooting
 
 ### "Module not found"
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### "GPU not available" (Colab)
-```
+
+```bash
 Runtime → Change runtime type → GPU
 ```
 
 ### "OpenAI API error"
+
 ```bash
 # Get key from https://platform.openai.com/api-keys
 # Add to .env file or enter in sidebar
 ```
 
 ### "Port 8501 already in use"
+
 ```bash
 python app.py --server.port=8502
 ```
@@ -283,6 +292,7 @@ We welcome contributions! Areas for improvement:
 ```
 
 **Dependencies:**
+
 - CellPose: Stringer et al., Nature Methods (2021)
 - LIVECell: Edlund et al., Nature Methods (2021)
 - OpenAI GPT-4: OpenAI (2023)
@@ -316,14 +326,12 @@ cd docker && docker-compose up -d
 
 ---
 
-## 🌟 Star This Repo!
+## 🌟 Star This Repo
 
 If you find CellVision useful, please ⭐ star this repository!
 
 ---
 
-<div align="center">
-  <strong>Made with ❤️ for the biology research community</strong>
-  <br>
-  <sub>Transform your microscopy analysis today! 🔬✨</sub>
-</div>
+Made with ❤️ for the biology research community
+
+Transform your microscopy analysis today! 🔬✨
