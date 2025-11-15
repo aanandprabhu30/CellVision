@@ -1,0 +1,8 @@
+cellpose
+numpy
+opencv-python
+streamlit
+openai
+pillow
+matplotlib
+scikit-image
