@@ -20,7 +20,7 @@ def get_cellpose_model():
     global model
     if model is None:
         print("Loading CellPose model...")
-        model = models.CellposeModel(gpu=False, model_type='cyto2')
+        model = models.CellposeModel(gpu=True, model_type='cyto2')
     return model
 
 
