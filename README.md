@@ -1,6 +1,6 @@
 # 🔬 CellVision
 
-**AI-Powered Microscopy Analysis in 30 Seconds**
+## AI-Powered Microscopy Analysis in 30 Seconds
 
 Transform hours of manual cell counting into automated, publication-quality analysis.
 
@@ -69,7 +69,7 @@ For AI-generated figure legends, you need an OpenAI API key:
 
 ## 📁 Project Structure
 
-```
+```text
 CellVision/
 ├── cellvision.py          # Main application (run this!)
 ├── requirements.txt       # Dependencies
@@ -118,8 +118,6 @@ MIT License
 
 ---
 
-<div align="center">
-  <strong>Made with ❤️ for the biology research community</strong>
-  <br><br>
-  <a href="https://github.com/aanandprabhu30/CellVision">⭐ Star this repo!</a>
-</div>
+Made with ❤️ for the biology research community
+
+[⭐ Star this repo!](https://github.com/aanandprabhu30/CellVision)
