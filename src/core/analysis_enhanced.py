@@ -276,13 +276,21 @@ def analyze_microscopy_image(image_path, use_gpu=False, diameter=None):
         return masks, {
             'total_cells': 0,
             'avg_area': 0,
+            'std_area': 0,
+            'median_area': 0,
             'avg_circularity': 0,
+            'avg_eccentricity': 0,
+            'avg_solidity': 0,
             'density': 0,
             'size_variation': 0,
             'avg_health_score': 0,
             'healthy_cells': 0,
             'stressed_cells': 0,
-            'apoptotic_cells': 0
+            'apoptotic_cells': 0,
+            'healthy_percentage': 0,
+            'avg_nearest_neighbor': 0,
+            'clustering_coefficient': 0,
+            'spatial_distribution': 'N/A'
         }, []
     
     # 7. Morphology analysis
