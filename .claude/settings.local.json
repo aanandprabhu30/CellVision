@@ -4,9 +4,10 @@
       "Bash(python3:*)",
       "Bash(source:*)",
       "Bash(pip install:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Read(//Users/aanandprabhu/.cellpose/models/**)",
+      "Bash(streamlit run:*)"
     ],
-    "deny": [],
-    "ask": []
+    "deny": []
   }
 }
