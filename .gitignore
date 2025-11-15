@@ -24,13 +24,12 @@ models/
 
 # Generated files
 *.png
+!sample_cells.png
 *.jpg
 *.jpeg
 *.tif
 *.tiff
 analysis.png
-sample_cells.png
-temp_*.png
 
 # OS
 .DS_Store
