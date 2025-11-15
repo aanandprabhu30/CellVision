@@ -54,7 +54,7 @@ def main():
                 f.write(uploaded_file.getbuffer())
 
             # Display original
-            st.image(temp_path, caption="Original Image", use_column_width=True)
+            st.image(temp_path, caption="Original Image", use_container_width=True)
 
     with col2:
         st.subheader("📊 Analysis Results")
