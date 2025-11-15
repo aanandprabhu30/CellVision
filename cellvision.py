@@ -161,7 +161,7 @@ def get_model():
     """Get or create cached CellPose model"""
     global _MODEL_CACHE
     if _MODEL_CACHE is None:
-        _MODEL_CACHE = models.Cellpose(gpu=False, model_type='cyto2')
+        _MODEL_CACHE = models.CellposeModel(gpu=False, model_type='cyto2')
     return _MODEL_CACHE
 
 
